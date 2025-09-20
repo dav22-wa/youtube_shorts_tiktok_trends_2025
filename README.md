@@ -1,4 +1,4 @@
-📈 Short-Form Video Virality Predictor
+## 📈 Short-Form Video Virality Predictor
 
 A Streamlit-based machine learning app that predicts whether a short-form video (TikTok or YouTube Shorts) is likely to be:
 
@@ -12,7 +12,7 @@ Stable
 
 The app uses video metadata (views, likes, comments, shares, etc.) to estimate the virality trend.
 
-🚀 Features
+## 🚀 Features
 
 URL Analysis: Paste a TikTok or YouTube Shorts link to auto-fetch video statistics.
 
@@ -24,7 +24,7 @@ Confidence Score: Displays model confidence (if the model supports probabilities
 
 Debugging Info: Sidebar shows raw model output and aligned features.
 
-🛠️ Requirements
+## 🛠️ Requirements
 
 Python 3.9+
 
@@ -41,12 +41,12 @@ TikTokApi        # (Optional) For TikTok metadata
 
 ⚡ If you only need manual input mode, you can skip yt-dlp and TikTokApi.
 
-📥 Installation & Setup
+## 📥 Installation & Setup
 
 Clone the repository
 
-git clone https://github.com/yourusername/virality-predictor.git
-cd virality-predictor
+'''  git clone https://github.com/yourusername/virality-predictor.git
+'''  cd virality-predictor
 
 
 Create a virtual environment (recommended)
@@ -68,7 +68,7 @@ virality_model.pkl
 training_columns.pkl
 label_encoder.pkl   # optional
 
-▶️ Running the App
+## ▶️ Running the App
 
 Run the Streamlit server:
 
@@ -77,7 +77,7 @@ streamlit run app.py
 
 Then open the provided local URL (e.g. http://localhost:8501) in your browser.
 
-💡 Usage
+## 💡 Usage
 
 Paste a video URL (TikTok or YouTube Shorts).
 
@@ -99,7 +99,7 @@ Predicted trend (Rising / Declining / Seasonal / Stable)
 
 Model confidence (if available)
 
-🔧 Model Training (Optional)
+## 🔧 Model Training (Optional)
 
 To retrain or update the model:
 
@@ -113,17 +113,18 @@ joblib.dump(model, "virality_model.pkl")
 joblib.dump(list(X.columns), "training_columns.pkl")
 joblib.dump(label_encoder, "label_encoder.pkl")  # if using encoded labels
 
-⚠️ Troubleshooting
+## ⚠️ Troubleshooting
 Issue	Solution
 Prediction always the same	The model might be underfitted or trained on imbalanced data. Retrain with more diverse samples.
 yt_dlp errors	Update yt_dlp: pip install --upgrade yt-dlp.
 TikTok fetching fails	TikTokApi often needs cookies or may be region-restricted. Use manual input as a fallback.
-📜 License
+
+## 📜 License
 
 This project is released under the MIT License.
 You are free to use, modify, and distribute with attribution.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 David Waihenya
 University of Embu – Computer Science
